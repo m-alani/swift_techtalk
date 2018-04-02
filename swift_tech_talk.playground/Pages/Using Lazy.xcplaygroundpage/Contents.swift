@@ -6,4 +6,7 @@
 
 import Foundation
 
-var str = "Hello, playground"
+struct User {
+    let firstName: String
+    let lastName: String
+}

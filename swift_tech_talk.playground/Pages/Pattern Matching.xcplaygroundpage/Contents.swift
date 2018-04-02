@@ -6,6 +6,5 @@
 
 import Foundation
 
-var str = "Hello, playground"
 
 //: [Next to `enum`s](@next)

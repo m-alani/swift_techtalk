@@ -11,7 +11,7 @@
 //: ### Topics
 //:
 //: - [Higher Order Functions](Higher%20Order%20Functions) (`forEach`, `reduce`, `compactMap`, etc.)
-//: - [Pattern Matching](Pattern%20Matching) using `switch`/`case`
+//: - [Pattern Matching](Pattern%20Matching) using `switch`/`case`/`where`/`is`
 //: - A bit more about [`enum`s](Enums)
 //: - Better performance [using `lazy`](Using%20Lazy)
 //:
