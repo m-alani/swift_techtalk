@@ -9,6 +9,8 @@ import Foundation
 struct User {
     let firstName: String
     let lastName: String
+    
+    // This will be executed (and stored) only the first time you read this property. Every subsequent access will just return the stored value.
     lazy var fullName: String = {
         print("creating...")
         return "\(self.firstName) \(self.lastName)"
@@ -20,6 +22,6 @@ struct User {
     }
 }
 
-var myUser = User(firstName: "Marwan", lastName: "Alani")
+var myUser = User(firstName: "Marwan", lastName: "Alani") // myUser.fullname is not calculated yet
 
-_ = myUser.fullName
+_ = myUser.fullName // the closure for "fullname" gets executed now, and its returned value is stored and returned

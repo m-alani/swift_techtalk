@@ -6,6 +6,7 @@
 
 import Foundation
 
+// enums can have associated types
 enum Weather {
     case sunny
     case cloudy(coverage: Int)
@@ -13,6 +14,7 @@ enum Weather {
 
 let myWeather = Weather.cloudy(coverage: 86)
 
+// associated types of enums can be used to match a pattern in switch cases
 switch myWeather {
 case .cloudy(let coverage) where coverage > 10 :
     print("It's a bit cloudy!")
